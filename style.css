@@ -1,0 +1,76 @@
+/* Imposta lo sfondo della pagina */
+body {
+	background-color: #F1F1F1;
+	font-family: 'Cutive Mono', monospace;
+	padding: 20px;
+}
+
+/* Titolo principale */
+h1 {
+	color: white;
+	background-color: #37393b;
+}
+
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+body, p{
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+	background-color: transparent;
+}
+
+/* Link per il download */ 
+a {
+	display: inline-block;
+	background-color: #9a9e9c;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+/* Effetto hover sul pulsante */
+a :hover {
+	background-color: #3a86ff;
+	color: white;
+}
+
+.scroll-btn {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	background-color: transparent;
+	border: 2px solid #6c757d;
+  color: #6c757d;             
+	transform: translateX(-50%) translateY(20px);
+	opacity: 0;
+	transition: opacity 0.5s ease, transform 0.5s ease;
+	z-index: 9999;
+	pointer-events: none; /* non cliccabile se invisibile*/
+}
+
+.scroll-btn:hover {
+	background-color: #6c757d;
+	color: white;
+	border: #6c757d;
+}
+
+.scroll-btn.visible {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.img-text-container {
+		flex-direction: column;
+	}
+}
