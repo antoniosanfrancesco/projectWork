@@ -43,3 +43,8 @@ window.addEventListener('scroll', function(){
 	
 	lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; //evita valori negativi
 });
+
+// Forza lo scroll in cima all'apertura della pagina
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
